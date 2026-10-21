@@ -1,0 +1,69 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "boone/campaign-cta",
+  "version": "1.0.0",
+  "title": "Campaign CTA",
+  "category": "design",
+  "icon": "megaphone",
+  "description": "A reusable, accessible campaign call-to-action with optional GTM click tracking.",
+  "keywords": [
+    "marketing",
+    "lead generation",
+    "conversion",
+    "cta"
+  ],
+  "textdomain": "boone-campaign-cta",
+  "supports": {
+    "html": false,
+    "anchor": true,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "spacing": {
+      "margin": true
+    }
+  },
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "default": "Turn interest into action"
+    },
+    "description": {
+      "type": "string",
+      "default": "Build a faster path from discovery to your next conversation."
+    },
+    "buttonText": {
+      "type": "string",
+      "default": "Talk to our team"
+    },
+    "buttonUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "newTab": {
+      "type": "boolean",
+      "default": false
+    },
+    "variant": {
+      "type": "string",
+      "default": "light"
+    },
+    "headingLevel": {
+      "type": "string",
+      "default": "h2"
+    },
+    "trackClicks": {
+      "type": "boolean",
+      "default": false
+    },
+    "eventName": {
+      "type": "string",
+      "default": "campaign_cta_click"
+    }
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}

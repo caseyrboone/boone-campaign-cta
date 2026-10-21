@@ -1,0 +1,15 @@
+{
+  "name": "boone-campaign-cta",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Native React JSX Gutenberg CTA block with optional GTM dataLayer events",
+  "license": "GPL-2.0-or-later",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "test": "node --test tests/*.test.cjs"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  },
+  "engines": { "node": ">=20" }
+}
